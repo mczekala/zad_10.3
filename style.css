@@ -1,0 +1,25 @@
+#carousel {
+	margin: 0 auto;
+	overflow: hidden;
+	width: 400px;
+	border: 10px solid yellow;
+}
+ul {
+	width: 2000px;
+}
+.clearfix::before, .clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+li {
+	width: 400px;
+	list-style: none;
+	float: left;
+}
+img {
+	height: 300px;
+	display: block;
+	width: 100%;
+}
