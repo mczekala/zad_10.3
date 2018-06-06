@@ -1,19 +1,33 @@
 #carousel {
+	position: relative;
 	margin: 0 auto;
 	overflow: hidden;
 	width: 400px;
 	border: 10px solid yellow;
 }
+.fa-circle {
+	color: #fff;
+}
+ol {
+	position: absolute;
+	bottom: 10px;
+	left: 175px;
+}
+ol li {
+	display: inline;
+}
 ul {
 	width: 2000px;
+	position: relative;
+	left: -400px;
+	z-index: -1;
 }
 .clearfix::before, .clearfix::after {
 	content: "";
 	display: table;
 	clear: both;
 }
-
-li {
+ul li {
 	width: 400px;
 	list-style: none;
 	float: left;
@@ -22,4 +36,20 @@ img {
 	height: 300px;
 	display: block;
 	width: 100%;
+}
+#buttonL {
+	font-size: 50px;
+	color: #fff;
+	font-weight: 900;
+	position: absolute;
+	top: 100px;
+	left: 0;
+}
+#buttonR {
+	font-size: 50px;
+	font-weight: 900;
+	color: #fff;
+	position: absolute;
+	top: 100px;
+	right: 0;
 }
