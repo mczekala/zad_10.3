@@ -4,11 +4,11 @@ $(function(){
 
 	$('#buttonL').click(function() {changeSlideL()});
 	$('#buttonR').click(function() {changeSlideR()});
-	var indicator_1 = $('#index-1').click(function() {move(1)});
-	var indicator_2 = $('#index-2').click(function() {move(2)});
-	var indicator_3 = $('#index-3').click(function() {move(3)});
-	var indicator_4 = $('#index-4').click(function() {move(4)});
-	var indicator_5 = $('#index-5').click(function() {move(5)});
+	$('.index').click(function() {
+		var id = '#'+$(this).attr('id');
+		var index = $('.index').index($(id));
+		move(index+1);
+	});
 	
 	function changeSlideR() {
 		carouselImages.animate({'marginLeft':-400}, 500, moveFirstSlideR);
